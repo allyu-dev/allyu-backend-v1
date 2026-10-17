@@ -8,3 +8,8 @@ dist
 serviceAccountKey.json
 *.log
 coverage
+infra
+docs
+serviceAccountKey*.json
+**/*.tfstate*
+.npm-cache
