@@ -44,6 +44,7 @@ resource "aws_iam_openid_connect_provider" "github" {
 
 resource "aws_iam_role" "deploy" {
   name = "${var.service_name}-github-deploy"
+
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
     Statement = [{
@@ -55,7 +56,7 @@ resource "aws_iam_role" "deploy" {
       Condition = {
         StringEquals = {
           "token.actions.githubusercontent.com:aud" = "sts.amazonaws.com"
-          "token.actions.githubusercontent.com:sub" = "repo:${var.github_repository}:ref:refs/heads/main"
+          "token.actions.githubusercontent.com:sub" = "repo:allyu-dev@327299131/allyu-backend-v1@1422947503:ref:refs/heads/main"
         }
       }
     }]
