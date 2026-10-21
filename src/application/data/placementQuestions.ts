@@ -6,7 +6,7 @@ import type {
 const placementQuestions: readonly PlacementQuestion[] = [
   {
     id: "q1",
-    prompt: "I ___ a software developer, in the backend team.",
+    prompt: "I ___ a software developer, in the control workin positions",
     options: [
       { id: "a", text: "is" },
       { id: "b", text: "am" },
